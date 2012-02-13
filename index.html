@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+	<title>С тобой в сердце, с тобой в мыслях. 4ever.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/lightbox.css" />
+	<link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="/favicon.ico"/>
+<script src="http://site.ru/uppod.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+
+function GetPhoto(id)
+{
+document.getElementById(id).style.zIndex 
+                                 = "12";
+}
+function OutPhoto(id)
+{
+document.getElementById(id).style.zIndex 
+                                 = "7";
+}
+function OutPhoto2(id)
+{
+document.getElementById(id).style.zIndex 
+                                 = "8";
+}
+	</script> 
+<link type="text/css" href="js/jquery.lightbox.css" rel="stylesheet" />
+<script src="js/jquery-1.3.2.js" type="text/javascript"></script>
+<!-- для того, чтобы настроить галерею для IE6 (и других браузеров, параметры приходится передавать в строке запроса -->
+<script src="js/jquery.lightbox.js?show_linkback=false&amp;show_helper_text=false&amp;show_info=false&amp;show_extended_info=false&amp;keys.close=z&amp;keys.prev=q&amp;keys.next=e&amp;text.image=Фото&amp;text.of=из&amp;text.close=Закрыть&amp;text.download=Загрузить" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+  // так можно настроить галерею для всех
+  // браузеров, исключая IE6
+  /*$.Lightbox.construct({
+    show_linkback: false,
+    show_helper_text: false,
+    show_info: true,
+    show_extended_info: true,
+    download_link: false,
+    keys: {
+    	close: 'z',
+    	prev: 'q',
+    	next: 'e'
+    },
+    opacity: 0.7,
+    text: {
+    	image: 'Фото',
+    	of: 'из',
+    	close: 'Закрыть',
+    	download: 'Загрузить'
+    }
+  });*/
+  
+});
+-->
+</script>
+<style type="text/css">
+body { margin:0; padding:0; }
+#lightBox { width:400px; margin:0; padding:20px; list-style-type:none; }
+#lightBox img { border:1px solid #000; margin-left:5px; }
+#lightBox li { float:left; }
+</style>
+</head>
+<body>
+<div id="player-layer">
+<div id="play">
+<object type="application/x-shockwave-flash" data="/uppod.swf" width="300" height="35">
+<param name="bgcolor" value="#ffffff" />
+<param name="allowFullScreen" value="true" />
+<param name="allowScriptAccess" value="always" />
+<param name="wmode" value="transparent" />
+<param name="movie" value="/uppod.swf" />
+<param name="flashvars" value="st=audio.txt&amp;file=1.mp3" />
+</object>
+</div>
+</div>    
+<div id="photo-1" class="photo-layer">
+<div class="photo">
+ <a href="/photo/1.jpg" rel="lightbox-tour" title="Мой лучший Новый Год..."><img src="/photo/1.jpg" alt="" /></a>
+</div>
+<div class="text">
+Мой лучший Новый Год...
+</div>
+</div>
+<div id="photo-2" class="photo-layer" onmouseover="GetPhoto('photo-2')" onmouseout="OutPhoto2('photo-2')">
+<div class="photo">
+<a href="/photo/2.jpg" rel="lightbox-tour" title="Нашел счастье..."><img src="/photo/2.jpg" alt="" /></a>
+</div>
+<div class="text">
+Нашел счастье...
+</div>
+</div>
+<div id="photo-3" class="photo-layer" onmouseover="GetPhoto('photo-3')" onmouseout="OutPhoto2('photo-3')">
+<div class="photo">
+<a href="/photo/3.jpg" rel="lightbox-tour" title="Она всегда рядом..."><img src="/photo/3.jpg" alt="" /></a>
+</div>
+<div class="text">
+Она всегда рядом...
+</div>
+</div>
+<div id="photo-4" class="photo-layer" onmouseover="GetPhoto('photo-4')" onmouseout="OutPhoto('photo-4')">
+<div class="photo">
+<a href="/photo/4.jpg" rel="lightbox-tour" title="Она самая милая..."><img src="/photo/4.jpg" alt="" /></a>
+</div>
+<div class="text">
+Она самая милая...
+</div>
+</div>
+<div id="photo-5" class="photo-layer" onmouseover="GetPhoto('photo-5')" onmouseout="OutPhoto('photo-5')">
+<div class="photo">
+<a href="/photo/5.jpg" rel="lightbox-tour" title="И самая красивая, всегда..."><img src="/photo/5.jpg" alt="" /></a>
+</div>
+<div class="text">
+И самая красивая, всегда...
+</div>
+</div>
+<div id="love-is-layer" class="gum">
+Love Is...
+</div>
+<div id="i-u-layer" class="gum">
+I+U
+</div>
+<div class="kra">
+<div class="heart"></div>
+</div>
+<script type="text/javascript">this.player = new Uppod({m:"video",uid:"videoplayer",file:"ссылка"});</script>
+</body>
+</html>

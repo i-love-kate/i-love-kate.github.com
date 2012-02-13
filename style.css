@@ -1,0 +1,187 @@
+body {
+background:#0072c2;
+}
+/* слои */
+#player-layer {
+position: absolute;
+width: 400px;
+height: 60px;
+left:50%;
+border-radius:0 0 150px 150px;
+background: #fdfdfd;
+top:0;
+z-index: 15;
+margin:0;
+padding:0;
+margin-left: -200px;
+}
+#play {
+margin-left: 50px;
+margin-top: 10px;
+width: 300px;
+padding:0;
+}
+#photo-1 {
+left:50%;
+z-index: 9;
+margin-left: -200px;
+top: 50%;
+margin-top: -215px;
+}
+#photo-2 {
+left:10px;
+z-index: 8;
+top: 5%;
+}
+#photo-3 {
+right:10px;
+z-index: 8;
+top: 12%;
+}
+#photo-4 {
+left:60px;
+z-index: 7;
+bottom: 60px;
+}
+#photo-5 {
+right:40px;
+z-index: 7;
+bottom: 40px;
+}
+#love-is-layer {
+left: 15px;
+top: 5px;
+}
+#i-u-layer {
+right: 25px;
+bottom: 5px;
+}
+/* классы */
+.photo {
+margin:20px 20px 0px 20px;
+background: #000;
+width: 360px;
+height: 320px;
+position: relative;
+}
+.text {
+font-family: 'Marck Script', cursive;
+font-size: 30px;
+color: #000;
+text-align: center;
+width: 400px;
+line-height: 90px;
+}
+.photo-layer {
+position: absolute;
+width: 400px;
+height: 430px;
+background: #fdfdfd;
+margin:0;
+padding:0;
+border: 1px solid #000;
+}
+.gum {
+z-index: 11;
+font-family: 'Lobster', cursive;
+font-size: 150px;
+opacity: 0.8;
+color: #f1e000;
+text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 70px #000, 0 0 80px #000, 0 0 100px #000, 0 0 150px #000;
+position: absolute;
+}
+.heart {
+				dosplay: block;
+				-webkit-animation: 'anime' 300ms ease-in 0 infinite alternate;
+				-moz-animation-duration: 300ms;
+				-moz-animation-name: anime;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-direction: alternate;
+				-moz-animation-timing-function: ease-in;
+				animation-duration: 300ms;
+				animation-name: 'anime';
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				animation-timing-function: ease-in;
+				position: relative;
+				width: 100px;
+				height: 100px;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+				border: solid 1px red;
+				border-top: none;
+				border-left: none;
+				background: red;
+				background: -webkit-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+				background: -moz-radial-gradient(170% 50%, circle , #8B0000 0%, #8B0000 52%,  red 76%);
+				background: -o-radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+				background: radial-gradient(115% 50%, 75px 110px, #8B0000, #8B0000, red);
+			}
+			@-webkit-keyframes 'anime' {
+				from {
+					-webkit-transform: scale(1) rotate(45deg);
+				}
+				to {
+					-webkit-transform: scale(1.1) rotate(45deg);
+				}
+			}
+			@-moz-keyframes anime {
+				from {
+					-moz-transform: scale(1) rotate(45deg);
+				}
+				to {
+					-moz-transform: scale(1.1) rotate(45deg);
+				}
+			}
+			@keyframes 'anime' {
+				from {
+					transform: scale(1) rotate(45deg);
+				}
+				to {
+					transform: scale(1.1) rotate(45deg);
+				}
+			}
+.kra {
+right: 10%;
+top: 15%;
+z-index: 1000;
+position: absolute;
+transform:skew(0deg,10deg);
+-ms-transform:skew(0deg,10deg); /* IE 9 */
+-moz-transform:skew(0deg,10deg); /* Firefox */
+-webkit-transform:skew(0deg,10deg); /* Safari и Chrome */
+-o-transform:skew(0deg,10deg); /* Opera */
+}			
+			.heart:before, .heart:after {
+				background: red;
+				background: -webkit-radial-gradient(15% 50%, 65px 65px, #FFE4E1, red);
+				background: -moz-radial-gradient(15% 50%, circle, #FFE4E1, red 85%);
+				background: -o-radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+				background: radial-gradient(15% 50%, 65% 65%, #FFE4E1, red);
+				position:absolute;
+				content: ' ';
+				-webkit-border-radius: 50px 0 0 50px;
+				-moz-border-radius: 50px 0 0 50px;
+				border-radius: 50px 0 0 50px;
+				width: 70px;
+				height: 99px;
+				border: solid 1px red;
+				border-right: none;
+				left:-70px;
+			}
+			.heart:after {
+				position: absolute;
+z-index: 1000;
+				left: 15px;
+				top:-85px;
+				-webkit-transform: rotate(90deg);
+				-moz-transform: rotate(90deg);
+				-o-transform: rotate(90deg);
+				background: red;
+				background: -webkit-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+				background: -moz-radial-gradient(50% 80%, circle, #FFB6C1, red, #8B0000 90%);
+				background: -o-radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+				background: radial-gradient(50% 80%, 85px 80px, #FFB6C1, red, #8B0000);
+			}
